@@ -28,6 +28,10 @@
           colors: {
             clifford: '#da373d',
             'red-color': '#ef4444',
+            'black-color': '#131318',
+            'rgba-white-color': '#ffffff99',
+            'hr-line': '#13131833',
+            'rgba-grey': '#13131899',
           }
         }
       }
@@ -38,7 +42,7 @@
 <body class="font-manrope">
     <header>
       <!-- navbar section  -->
-      <div class="navbar bg-base-100 px-5 pt-14 pb-14 lg:px-32 lg:pt-12 lg:pb-12">
+      <div class="navbar bg-base-100 px-5 pt-14 pb-6 lg:px-32 lg:pt-12 lg:pb-12">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden px-0">
@@ -73,40 +77,33 @@
       </div>
 
         <!-- slider section  -->
-            <div class="carousel w-full lg:h[550px] ">
-                <div id="slide1" class="carousel-item relative  w-full">
-                  <img src="/Images/1.png" class="w-full lg:h[550px]" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+            <div class="px-5 lg:h-[550px] lg:px-32 relative">
+              <div class="carousel w-full ">
+                <div id="slide1" class="carousel-item sm:relative w-full">
+                  <img src="/Images/1.png" class="w-full lg:h-[550px] rounded-xl"/>
+                  <div class="absolute flex justify-end bg-black-color text-white mt-3 px-5 ml-5 mr-5 right-0 top-44 bottom-5 lg:top-80 lg:bottom-10 lg:w-6/12 p-4 lg:p-8 rounded-2xl">
+                    <div>
+                      <p class="font-extrabold text-lg lg:text-2xl mb-4">Meet all the heroes from the field</p>
+                      <p class="font-medium text-sm lg:text-base text-rgba-white-color">Gather with field heroes in a memorable encounter. Unite and connect with industry leaders and innovators. A unique opportunity to meet the best in the field.</p>
+                    </div>
+                  </div>
+                  <div class="absolute flex justify-start transform -translate-y-4 bottom-2 left-36 lg:bottom-8 lg:left-8">
+                    <a href="#slide4" class="btn btn-circle mr-3 lg:mr-4 bg-black-color text-white border-0">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-black-color text-white border-0">❯</a>
                   </div>
                 </div> 
-
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide4" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
-                </div>
-              </div>
+              </div> 
+            </div>
     </header>
     <main>
-
+      <!-- Professional hockey section  -->
+      <section class="mt-52 lg:mt-24 lg:px-32">
+        <div class="border-dashed border-2 text-hr-line w-full lg:mb-8"></div>
+        <div class="text-black-color text-2xl lg:text-4xl font-extrabold text-center">Professional Hockeys Club</div>
+        <div class="text-rgba-grey text-center mt-5 w-2/3 mx-auto">
+          Elite professional hockey organization. Home to skilled athletes and champions. Renowned for excellence on and off the ice.</div>
+        <div class="border-dashed border-2 text-hr-line w-full lg:mt-8"></div>
+      </section>
     </main>
     <footer>
 
